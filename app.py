@@ -1,7 +1,7 @@
 from PIL import Image
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
+import  streamlit_lottie
 
 st.set_page_config(page_title="My Website", page_icon=":tada:", layout="wide")
 
@@ -79,7 +79,7 @@ with st.container():
         st.subheader("Soft Skills")
         st.write("Leadership, Teamwork, Time management, Swimming, and Ping Pong")
     with left:
-        st_lottie(lottie_codding, height=400, key="coding")
+        streamlit_lottie(lottie_codding, height=400, key="coding")
 
 # Project sections
 projects = [
